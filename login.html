@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZenithAcademy | Student Portal Login</title>
+    <meta
+      name="description"
+      content="Student login for ZenithAcademy. Access grades, assignments, and academic progress."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="auth-body">
+    <div class="page-shell auth-shell">
+      <header class="topbar compact-topbar">
+        <nav class="navbar container">
+          <a href="index.html" class="brand" aria-label="ZenithAcademy home">
+            <span class="brand-mark">Z</span>
+            <span>ZenithAcademy</span>
+          </a>
+          <a href="index.html" class="btn btn-ghost">Back to Home</a>
+        </nav>
+      </header>
+
+      <main class="auth-main">
+        <section class="auth-container container">
+          <div class="auth-visual reveal">
+            <div class="visual-badge">Student Portal</div>
+            <h1>Track your progress. Stay on top of your goals.</h1>
+            <p>
+              Sign in with your school email to view grades, assignments, and your
+              academic overview.
+            </p>
+
+            <div class="mini-metrics">
+              <div>
+                <strong>12</strong>
+                <span>Assignments</span>
+              </div>
+              <div>
+                <strong>96%</strong>
+                <span>Average score</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-card reveal">
+            <div class="auth-card-header">
+              <span class="eyebrow">Welcome back</span>
+              <h2>Log in</h2>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+              <label>
+                School email
+                <input type="email" id="schoolEmail" placeholder="name@school.edu" required />
+              </label>
+
+              <label>
+                Password
+                <input type="password" id="password" placeholder="Enter your password" required />
+              </label>
+
+              <div class="remember-row">
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span>Remember me</span>
+                </label>
+                <a href="#">Forgot password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Access Dashboard</button>
+            </form>
+
+            <p id="loginMessage" class="form-message" aria-live="polite"></p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
